@@ -1,0 +1,35 @@
+.todo-item-container {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+}
+
+.todo-item-container span {
+  opacity: 0;
+  font-size: 1.125rem;
+}
+
+.todo-item-container:hover span {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.todo-item-container:hover span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.todo-item-text {
+  list-style-type: none;
+  margin: 0.75rem 0.5rem;
+  padding: 0;
+}
+
+.item-checked li {
+  text-decoration: line-through;
+}
+
+.item-checked span:first-child {
+  opacity: 1;
+  color: green;
+}

@@ -1,0 +1,21 @@
+.todo-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-search-input {
+  width: 60%;
+  height: 32px;
+  border: solid 2px #801336;
+  border-radius: 8px;
+  outline: none;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.todo-search-input:focus {
+  border: solid 2px #ee4540;
+}

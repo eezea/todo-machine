@@ -1,0 +1,12 @@
+.big-container {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 80%;
+  max-width: 768px;
+  min-height: 480px;
+  margin: 0 auto;
+  box-shadow: 4px, 4px, 10px, rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0 10px #801336, 0 0 0 20px #510a32;
+}
