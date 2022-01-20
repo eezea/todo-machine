@@ -8,10 +8,17 @@ import { TodoItem } from "../TodoItem";
 import { CreateTodoButton } from "../CreateTodoButton";
 import { Modal } from "../Modal";
 import { TodoForm } from "../TodoForm";
+import { EmptyTodos } from "../EmptyTodos";
 
 function AppUI() {
-  const { searchedTodos, completeTodo, deleteTodo, openModal, setOpenModal } =
-    React.useContext(TodoContext);
+  const {
+    totalTodos,
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+  } = React.useContext(TodoContext);
 
   return (
     <div className="big-container">
@@ -28,6 +35,7 @@ function AppUI() {
           />
         ))}
       </TodoList>
+      {totalTodos === 0 && <EmptyTodos />}
 
       {!!openModal && (
         <Modal>
